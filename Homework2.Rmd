@@ -96,6 +96,23 @@ Try using Kallisto (http://pachterlab.github.io/kallisto/) on the full FASTQ dat
 + Which one is better, why (hint: features, ease of use, correctness of the differential genes from visual plots or GO enrichment)? It is possible that there is no right or wrong answer here, as long as you can justify your decision here.  
 +	You can see the field is still very competitive and there are new tools coming out often. Whether they will be winner depends on solid statistics, good programming, other useful features, and user-friendly interface.
 
+# Part 3 Python exercise
+
+Write a python program to merge two paired-end Fastq files (4OH1_5M_a_sub.fastq;4OH1_5M_b_sub.fastq in /n/stat115/2017/HW2/Homework2/FastqData)  in to one. 
+
+1) Read in the two files into python
+
+2)	Distinguish quality ID and quality score, and sequence Id and sequence information
+
+3)	Match the sequence according to their sequence ID
+
+4)	Write out the results in csv files (remember to name your file with .csv suffix so that it can be opened directly by excel)
+
+The results should look like below:
+
+Sequace ID,sequence a,sequence b,sequence a quality,sequence b 
+@SRR2994643.15099964 15099964 length=50, CTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG, BBB@BGGGGGGGGGGGFGGGGGFGGGGGD;?/:9??9/999:9::>9?C?
+
 
 ## Submission
 Please submit your solution directly on the canvas website. Please provide your code (.Rmd) and a pdf file for your final write-up. Please pay attention to the clarity and cleanness of your homework. Page numbers and figure or table numbers are highly recommended for easier reference.
